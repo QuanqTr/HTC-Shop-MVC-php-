@@ -1,0 +1,70 @@
+/* Wrapper for the product section */
+.product-section {
+  background-color: #f4f4f4 !important; /* Light background */
+  padding: 20px 0 !important;
+  font-family: Arial, sans-serif !important;
+}
+
+/* Main container for centering content */
+.container {
+  width: 90% !important;
+  margin: 0 auto !important;
+  max-width: 1200px !important; /* Maximum width */
+}
+
+/* Layout for product items (3 products per row using grid) */
+.product-items-container {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important; /* 3 products per row */
+  gap: 20px !important; /* Space between products */
+  grid-auto-rows: 300px !important; /* Set height for each product */
+  margin-top: 20px !important; /* Add top margin for spacing */
+}
+
+/* Individual product item */
+.product-item {
+  background-color: white !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+  transition: none !important; /* No transition effect */
+  position: relative !important;
+  padding: 10px !important;
+}
+
+/* Product image */
+.product-item img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover !important;
+}
+
+/* Product info */
+.product-info {
+  padding: 15px !important;
+  text-align: center !important;
+}
+
+/* Product title */
+.product-title {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  color: #333 !important;
+  margin-bottom: 10px !important;
+}
+
+/* Product price */
+.product-price {
+  font-size: 18px !important;
+  color: #4caf50 !important;
+  font-weight: bold !important;
+  margin-bottom: 10px !important;
+}
+
+/* No products message */
+.no-products-message {
+  font-size: 20px !important;
+  color: #333 !important;
+  text-align: center !important;
+  padding: 20px 0 !important;
+}

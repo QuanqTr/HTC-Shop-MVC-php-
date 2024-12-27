@@ -1,0 +1,145 @@
+.itemlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px; /* Khoảng cách giữa các sản phẩm */
+}
+
+.item {
+  margin-top: 10px;
+  position: relative;
+  width: 29%; /* Ba sản phẩm trên mỗi hàng */
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Đảm bảo căn giữa nội dung */
+  height: 400px; /* Chiều cao cố định cho tất cả các sản phẩm */
+}
+
+.item img {
+  width: 100%;
+  height: 250px; /* Chiều cao cố định cho ảnh */
+  object-fit: cover; /* Đảm bảo ảnh được cắt đẹp */
+  border-radius: 10px;
+}
+
+.item-prodinfo {
+  padding: 10px;
+  text-align: center;
+  flex-grow: 1; /* Giúp phần nội dung giãn đều */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Đặt nội dung cách đều từ trên xuống */
+}
+
+.item-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.item-price {
+  color: #ef6603;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: auto; /* Đẩy giá xuống dưới cùng */
+}
+
+.item-hover {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9); /* Tạo nền mờ */
+  color: #fff;
+  opacity: 0; /* Mặc định ẩn */
+  transition: opacity 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Hiệu ứng hover cho item */
+.item:hover {
+  transform: scale(1.05); /* Phóng to sản phẩm khi hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Tăng độ đổ bóng */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Thêm transition mượt mà */
+}
+
+/* Hiệu ứng hover cho hình ảnh */
+.item:hover img {
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+  transition: transform 0.3s ease; /* Thêm transition cho ảnh */
+}
+
+/* Hiệu ứng hover cho thông tin sản phẩm */
+.item:hover .item-title {
+  color: #e63946; /* Đổi màu tiêu đề khi hover */
+}
+
+/* Hiệu ứng hover cho button */
+.item:hover .item-hover a {
+  background-color: #d93d1f; /* Đổi màu background của button khi hover */
+  color: #fff; /* Đổi màu chữ button khi hover */
+}
+
+.item:hover .item-hover {
+  opacity: 1; /* Hiển thị khi hover */
+}
+
+.item-hover a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  background-color: #ef6603;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .item {
+    width: 30%;
+    height: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .item {
+    width: 45%;
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+/* Hiệu ứng cho Sale */
+.sb-gdv-disc {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #e63946; /* Màu đỏ đẹp hơn */
+  color: #fff;
+  font-size: 14px; /* Điều chỉnh kích thước chữ */
+  padding: 5px 15px; /* Tăng padding để nhãn nổi bật hơn */
+  font-weight: bold;
+  border-radius: 20px; /* Tạo bo tròn mềm mại */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng đổ bóng */
+  z-index: 1; /* Đảm bảo luôn hiển thị trên các thành phần khác */
+  text-transform: uppercase; /* Chuyển chữ thành in hoa */
+  letter-spacing: 1px; /* Tăng khoảng cách giữa các chữ */
+}

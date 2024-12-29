@@ -12,7 +12,7 @@ use app\core\Application;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/img/logo-fav.png">
+    <link href="assets/img/logo_png.png" rel="icon">
     <title>HTCShop</title>
     <link rel="stylesheet" type="text/css" href="assets/lib/perfect-scrollbar/css/perfect-scrollbar.css" />
     <link rel="stylesheet" type="text/css"

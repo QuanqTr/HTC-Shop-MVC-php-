@@ -973,82 +973,59 @@ use app\core\Application;
 
                                 <div class="body_comment">
                                     <div class="row">
-                                        <form action="/comment?id=<?= htmlspecialchars($id_sanpham) ?>" method="post">
-                                            <div class="avatar_comment col-md-1">
-                                                <img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg"
-                                                    alt="avatar" />
-                                            </div>
-                                            <div class="box_comment col-md-11">
-                                                <textarea class="commentar" placeholder="Bình luận ở đây..."
-                                                    name="commentDetail"></textarea>
-                                                <div class="box_post">
-                                                    <div class="pull-right">
-                                                        <span>
-                                                            <img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg"
-                                                                alt="avatar" />
-                                                            <i class="fa fa-caret-down"></i>
-                                                        </span>
-                                                        <button type="submit">Comment</button>
-                                                    </div>
+
+                                        <div class="avatar_comment col-md-1">
+                                            <img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg"
+                                                alt="avatar" />
+                                        </div>
+                                        <div class="box_comment col-md-11">
+                                            <textarea class="commentar" placeholder="Bình luận ở đây..."
+                                                name="commentDetail"></textarea>
+                                            <div class="box_post">
+                                                <div class="pull-right">
+                                                    <span>
+                                                        <img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg"
+                                                            alt="avatar" />
+                                                        <i class="fa fa-caret-down"></i>
+                                                    </span>
+                                                    <button type="submit">Comment</button>
                                                 </div>
                                             </div>
-                                        </form>
+                                        </div>
                                     </div>
 
                                     <div class="row">
                                         <ul id="list_comment" class="col-md-12">
-                                            <?php foreach ($comment as $item): ?>
-                                            <?php if ($item['reply_id'] == 0): ?>
-                                            <li class="box_result row" id="post_id"
-                                                data-sp="<?= htmlspecialchars($id_sanpham) ?>"
-                                                data-action="<?= htmlspecialchars($item['idc']) ?>">
+                                            <li class="box_result row" id="post_id">
                                                 <div class="avatar_comment col-md-1">
                                                     <img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg"
                                                         alt="avatar" />
                                                 </div>
                                                 <div class="result_comment col-md-11">
-                                                    <h4><?= !empty($item['firstname']) ? htmlspecialchars($item['firstname']) : 'Ẩn danh' ?>
-                                                    </h4>
-                                                    <p><?= htmlspecialchars($item['commentDetail']) ?></p>
+                                                    <h4>Ẩn danh</h4>
+                                                    <p>Chi tiết bình luận</p>
                                                     <div class="tools_comment">
-                                                        <a class="replay" href="#"
-                                                            data-sp="<?= htmlspecialchars($id_sanpham) ?>"
-                                                            data-action="<?= htmlspecialchars($item['idc']) ?>">Reply</a>
+                                                        <a class="replay" href="#">Reply</a>
                                                         <span aria-hidden="true"> · </span>
-                                                        <?php if (($user && $user->id == $item['user_id']) || ($user && $user->role == 1)): ?>
-                                                        <a
-                                                            href="/deleteComment?id=<?= htmlspecialchars($id_sanpham) ?>&comment_id=<?= htmlspecialchars($item['idc']) ?>">Delete</a>
-                                                        <?php endif; ?>
                                                         <span aria-hidden="true"> · </span>
                                                     </div>
                                                     <ul class="child_replay">
-                                                        <?php foreach ($comment as $items): ?>
-                                                        <?php if ($items['reply_id'] == $item['idc']): ?>
                                                         <li class="box_reply row">
                                                             <div class="avatar_comment col-md-1">
                                                                 <img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg"
                                                                     alt="avatar" />
                                                             </div>
                                                             <div class="result_comment col-md-11">
-                                                                <h4><?= !empty($items['firstname']) ? htmlspecialchars($items['firstname']) : 'Ẩn danh' ?>
-                                                                </h4>
-                                                                <p><?= htmlspecialchars($items['commentDetail']) ?></p>
+                                                                <h4>Ẩn danh</h4>
+                                                                <p>Chi tiết trả lời</p>
                                                                 <div class="tools_comment">
-                                                                    <?php if (($user && $user->id == $items['user_id']) || ($user && $user->role == 1)): ?>
-                                                                    <a
-                                                                        href="/deleteComment?id=<?= htmlspecialchars($id_sanpham) ?>&comment_id=<?= htmlspecialchars($items['idc']) ?>">Delete</a>
-                                                                    <?php endif; ?>
                                                                     <span aria-hidden="true"> · </span>
                                                                 </div>
                                                             </div>
                                                         </li>
-                                                        <?php endif; ?>
-                                                        <?php endforeach; ?>
                                                     </ul>
                                                 </div>
                                             </li>
-                                            <?php endif; ?>
-                                            <?php endforeach; ?>
                                         </ul>
                                         <button class="show_more" type="button">Xem các bình luận khác</button>
                                     </div>

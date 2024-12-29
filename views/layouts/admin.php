@@ -39,7 +39,7 @@ use app\core\Application;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="/assets/img/logo-fav.png">
+    <link href="../assets/img/logo_png.png" rel="icon">
     <title>HTCShop</title>
     <link rel="stylesheet" type="text/css" href="/assets/lib/perfect-scrollbar/css/perfect-scrollbar.css" />
     <link rel="stylesheet" type="text/css"
@@ -110,9 +110,6 @@ use app\core\Application;
                                 </li>
                                 <li><a href="/admin/user"><i class="icon mdi mdi-view-web"></i><span>Tài
                                             khoản</span></a>
-                                </li>
-                                <li><a href="/admin/user/reset-password"><i class="icon mdi mdi-view-web"></i><span>Đặt
-                                            lại mật khẩu</span></a>
                                 </li>
                             </ul>
                         </div>

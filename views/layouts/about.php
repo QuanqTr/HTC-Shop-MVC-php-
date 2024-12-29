@@ -907,188 +907,140 @@ use app\core\Application;
 
             <div class="container">
 
-                <ul class="nav nav-tabs row  d-flex" data-aos="fade-up" data-aos-delay="100">
+                <ul class="nav nav-tabs row d-flex" data-aos="fade-up" data-aos-delay="100">
                     <li class="nav-item col-3">
                         <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
-                            <i class="bi bi-binoculars"></i>
-                            <h4 class="d-none d-lg-block">Modi sit est dela pireda nest</h4>
+                            <i class="bi bi-people"></i>
+                            <h4 class="d-none d-lg-block">Về chúng tôi</h4>
                         </a>
                     </li>
                     <li class="nav-item col-3">
                         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
-                            <i class="bi bi-box-seam"></i>
-                            <h4 class="d-none d-lg-block">Unde praesenti mara setra le</h4>
+                            <i class="bi bi-award"></i>
+                            <h4 class="d-none d-lg-block">Chất lượng hàng đầu</h4>
                         </a>
                     </li>
                     <li class="nav-item col-3">
                         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
-                            <i class="bi bi-brightness-high"></i>
-                            <h4 class="d-none d-lg-block">Pariatur explica nitro dela</h4>
+                            <i class="bi bi-lightbulb"></i>
+                            <h4 class="d-none d-lg-block">Đổi mới và công nghệ</h4>
                         </a>
                     </li>
                     <li class="nav-item col-3">
                         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
-                            <i class="bi bi-command"></i>
-                            <h4 class="d-none d-lg-block">Nostrum qui dile node</h4>
+                            <i class="bi bi-people-fill"></i>
+                            <h4 class="d-none d-lg-block">Cộng đồng hỗ trợ</h4>
                         </a>
                     </li>
-                </ul><!-- End Tab Nav -->
+                </ul>
+                <!-- End Tab Nav -->
 
                 <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-
                     <div class="tab-pane fade active show" id="features-tab-1">
                         <div class="row">
                             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                                <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                                <h3>Cam kết mang đến giải pháp hỗ trợ tốt nhất</h3>
                                 <p class="fst-italic">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore
-                                    magna aliqua.
+                                    Chúng tôi không chỉ cung cấp các dụng cụ hỗ trợ mà còn tạo cơ hội để mọi người có
+                                    thể sống tự tin và độc lập hơn.
                                 </p>
                                 <ul>
-                                    <li><i class="bi bi-check2-all"></i>
-                                        <spab>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</spab>
-                                    </li>
-                                    <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in
-                                            reprehenderit in
-                                            voluptate velit</span>.</li>
-                                    <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea
-                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                            trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span>
-                                    </li>
+                                    <li><i class="bi bi-check2-all"></i> Sản phẩm thiết kế chuyên biệt với công nghệ
+                                        tiên tiến.</li>
+                                    <li><i class="bi bi-check2-all"></i> Đội ngũ chuyên gia tận tâm, luôn sẵn sàng hỗ
+                                        trợ.</li>
+                                    <li><i class="bi bi-check2-all"></i> Giá trị cốt lõi: Đồng cảm, đổi mới và gắn kết
+                                        cộng đồng.</li>
                                 </ul>
                                 <p>
-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                    in
-                                    reprehenderit in voluptate
-                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                    cupidatat
-                                    non proident, sunt in
-                                    culpa qui officia deserunt mollit anim id est laborum
+                                    Chúng tôi xây dựng một môi trường nơi mọi người đều được tôn trọng, hỗ trợ và cùng
+                                    nhau phát triển.
                                 </p>
                             </div>
                             <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                <img src="assets/img/working-1.jpg" alt="" class="img-fluid">
+                                <img src="assets/img/about-us.jpg" alt="Về chúng tôi" class="img-fluid">
                             </div>
                         </div>
-                    </div><!-- End Tab Content Item -->
+                    </div>
+                    <!-- End Tab Content Item -->
 
                     <div class="tab-pane fade" id="features-tab-2">
                         <div class="row">
                             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                                <h3>Neque exercitationem debitis soluta quos debitis quo mollitia officia est</h3>
+                                <h3>Chất lượng hàng đầu</h3>
                                 <p>
-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                    in
-                                    reprehenderit in voluptate
-                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                    cupidatat
-                                    non proident, sunt in
-                                    culpa qui officia deserunt mollit anim id est laborum
-                                </p>
-                                <p class="fst-italic">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore
-                                    magna aliqua.
+                                    Mỗi sản phẩm đều được kiểm tra kỹ lưỡng để đảm bảo an toàn và hiệu quả, đáp ứng mọi
+                                    nhu cầu của người khuyết tật.
                                 </p>
                                 <ul>
-                                    <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea
-                                            commodo consequat.</span></li>
-                                    <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in
-                                            reprehenderit in
-                                            voluptate velit.</span></li>
-                                    <li><i class="bi bi-check2-all"></i> <span>Provident mollitia neque rerum
-                                            asperiores
-                                            dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</span></li>
-                                    <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea
-                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                            trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span>
-                                    </li>
+                                    <li><i class="bi bi-check2-all"></i> Sử dụng vật liệu chất lượng cao, bền bỉ.</li>
+                                    <li><i class="bi bi-check2-all"></i> Đáp ứng tiêu chuẩn quốc tế về an toàn và tiện
+                                        dụng.</li>
+                                    <li><i class="bi bi-check2-all"></i> Được đánh giá cao bởi các chuyên gia và người
+                                        dùng.</li>
                                 </ul>
                             </div>
                             <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                <img src="assets/img/working-2.jpg" alt="" class="img-fluid">
+                                <img src="assets/img/quality.jpg" alt="Chất lượng hàng đầu" class="img-fluid">
                             </div>
                         </div>
-                    </div><!-- End Tab Content Item -->
+                    </div>
+                    <!-- End Tab Content Item -->
 
                     <div class="tab-pane fade" id="features-tab-3">
                         <div class="row">
                             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                                <h3>Voluptatibus commodi ut accusamus ea repudiandae ut autem dolor ut assumenda
-                                </h3>
+                                <h3>Đổi mới và công nghệ</h3>
                                 <p>
-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                    in
-                                    reprehenderit in voluptate
-                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                    cupidatat
-                                    non proident, sunt in
-                                    culpa qui officia deserunt mollit anim id est laborum
+                                    Chúng tôi liên tục ứng dụng công nghệ mới để tạo ra những sản phẩm tối ưu nhất, nâng
+                                    cao chất lượng cuộc sống.
                                 </p>
                                 <ul>
-                                    <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea
-                                            commodo consequat.</span></li>
-                                    <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in
-                                            reprehenderit in
-                                            voluptate velit.</span></li>
-                                    <li><i class="bi bi-check2-all"></i> <span>Provident mollitia neque rerum
-                                            asperiores
-                                            dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</span></li>
+                                    <li><i class="bi bi-check2-all"></i> Thiết bị thông minh hỗ trợ giao tiếp và di
+                                        chuyển.</li>
+                                    <li><i class="bi bi-check2-all"></i> Sử dụng trí tuệ nhân tạo để cá nhân hóa giải
+                                        pháp.</li>
+                                    <li><i class="bi bi-check2-all"></i> Sản phẩm thân thiện với môi trường.</li>
                                 </ul>
-                                <p class="fst-italic">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore
-                                    magna aliqua.
-                                </p>
                             </div>
                             <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                <img src="assets/img/working-3.jpg" alt="" class="img-fluid">
+                                <img src="assets/img/innovation.jpg" alt="Đổi mới và công nghệ" class="img-fluid">
                             </div>
                         </div>
-                    </div><!-- End Tab Content Item -->
+                    </div>
+                    <!-- End Tab Content Item -->
 
                     <div class="tab-pane fade" id="features-tab-4">
                         <div class="row">
                             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                                <h3>Omnis fugiat ea explicabo sunt dolorum asperiores sequi inventore rerum</h3>
+                                <h3>Cộng đồng hỗ trợ</h3>
                                 <p>
-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                    in
-                                    reprehenderit in voluptate
-                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                    cupidatat
-                                    non proident, sunt in
-                                    culpa qui officia deserunt mollit anim id est laborum
-                                </p>
-                                <p class="fst-italic">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore
-                                    magna aliqua.
+                                    Chúng tôi tạo dựng một môi trường nơi mọi người được chia sẻ, kết nối và cùng nhau
+                                    phát triển.
                                 </p>
                                 <ul>
-                                    <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea
-                                            commodo consequat.</span></li>
-                                    <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in
-                                            reprehenderit in
-                                            voluptate velit.</span></li>
-                                    <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea
-                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                            trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span>
+                                    <li><i class="bi bi-check2-all"></i> Các chương trình hỗ trợ cộng đồng thường xuyên.
                                     </li>
+                                    <li><i class="bi bi-check2-all"></i> Đối tác tin cậy của các tổ chức phi lợi nhuận.
+                                    </li>
+                                    <li><i class="bi bi-check2-all"></i> Kết nối những câu chuyện truyền cảm hứng từ
+                                        người khuyết tật.</li>
                                 </ul>
                             </div>
                             <div class="col-lg-6 order-1 order-lg-2 text-center">
-                                <img src="assets/img/working-4.jpg" alt="" class="img-fluid">
+                                <img src="assets/img/community.png" alt="Cộng đồng hỗ trợ" class="img-fluid">
                             </div>
                         </div>
-                    </div><!-- End Tab Content Item -->
+                    </div>
+                    <!-- End Tab Content Item -->
 
                 </div>
 
             </div>
 
-        </section><!-- /Features Section -->
+        </section>
+
+        <!-- /Features Section -->
         <!-- Call To Action Section -->
         <section id="call-to-action" class="call-to-action section dark-background">
 
@@ -1096,15 +1048,12 @@ use app\core\Application;
 
                 <div class="row" data-aos="zoom-in" data-aos-delay="100">
                     <div class="col-xl-9 text-center text-xl-start">
-                        <h3>Call To Action</h3>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                            nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                            deserunt
-                            mollit anim id est laborum.</p>
+                        <h3>Cùng Hành Động Ngay Hôm Nay</h3>
+                        <p>Hãy tham gia cùng chúng tôi để mang đến những giải pháp tốt nhất, <br>
+                            giúp cuộc sống trở nên dễ dàng và trọn vẹn hơn.</p>
                     </div>
                     <div class="col-xl-3 cta-btn-container text-center">
-                        <a class="cta-btn align-middle" href="#">Call To Action</a>
+                        <a class="cta-btn align-middle" href="#">Liên hệ ngay</a>
                     </div>
                 </div>
 
@@ -1117,8 +1066,8 @@ use app\core\Application;
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Services</h2>
-                <p>What we do offer</p>
+                <h2>Dịch Vụ Của Chúng Tôi</h2>
+                <p>Mang đến những giải pháp hoàn hảo</p>
             </div><!-- End Section Title -->
 
             <div class="container">
@@ -1126,84 +1075,77 @@ use app\core\Application;
                 <div class="row gy-4">
 
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-item  position-relative">
+                        <div class="service-item position-relative">
                             <div class="icon">
-                                <i class="bi bi-cash-stack" style="color: #0dcaf0;"></i>
+                                <i class="bi bi-wallet2" style="color: #0dcaf0;"></i>
                             </div>
-                            <a href="service-details.html" class="stretched-link">
-                                <h3>Nesciunt Mete</h3>
+                            <a href="#" class="stretched-link">
+                                <h3>Thanh Toán Nhanh</h3>
                             </a>
-                            <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus
-                                dolores
-                                iure perferendis tempore et consequatur.</p>
+                            <p>Chúng tôi cung cấp giải pháp thanh toán tiện lợi, nhanh chóng và an toàn cho khách hàng.
+                            </p>
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-item position-relative">
                             <div class="icon">
-                                <i class="bi bi-calendar4-week" style="color: #fd7e14;"></i>
+                                <i class="bi bi-calendar-check" style="color: #fd7e14;"></i>
                             </div>
-                            <a href="service-details.html" class="stretched-link">
-                                <h3>Eosle Commodi</h3>
+                            <a href="#" class="stretched-link">
+                                <h3>Đặt Hàng Dễ Dàng</h3>
                             </a>
-                            <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque
-                                eum
-                                hic non ut nesciunt dolorem.</p>
+                            <p>Hỗ trợ đặt hàng trực tuyến một cách dễ dàng và tiện lợi, giúp tiết kiệm thời gian cho
+                                bạn.</p>
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="service-item position-relative">
                             <div class="icon">
-                                <i class="bi bi-chat-text" style="color: #20c997;"></i>
+                                <i class="bi bi-chat-dots" style="color: #20c997;"></i>
                             </div>
-                            <a href="service-details.html" class="stretched-link">
-                                <h3>Ledo Markt</h3>
+                            <a href="#" class="stretched-link">
+                                <h3>Hỗ Trợ 24/7</h3>
                             </a>
-                            <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id
-                                voluptas adipisci eos earum corrupti.</p>
+                            <p>Đội ngũ chăm sóc khách hàng luôn sẵn sàng hỗ trợ mọi vấn đề của bạn bất kỳ lúc nào.</p>
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="service-item position-relative">
                             <div class="icon">
-                                <i class="bi bi-credit-card-2-front" style="color: #df1529;"></i>
+                                <i class="bi bi-shield-check" style="color: #df1529;"></i>
                             </div>
-                            <a href="service-details.html" class="stretched-link">
-                                <h3>Asperiores Commodit</h3>
+                            <a href="#" class="stretched-link">
+                                <h3>Bảo Mật Thông Tin</h3>
                             </a>
-                            <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea
-                                fuga
-                                sit provident adipisci neque.</p>
+                            <p>Dữ liệu của bạn được bảo vệ an toàn tuyệt đối với các giải pháp bảo mật hiện đại.</p>
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
                         <div class="service-item position-relative">
                             <div class="icon">
-                                <i class="bi bi-globe" style="color: #6610f2;"></i>
+                                <i class="bi bi-globe-americas" style="color: #6610f2;"></i>
                             </div>
-                            <a href="service-details.html" class="stretched-link">
-                                <h3>Velit Doloremque</h3>
+                            <a href="#" class="stretched-link">
+                                <h3>Dịch Vụ Toàn Cầu</h3>
                             </a>
-                            <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut.
-                                Sed
-                                animi at autem alias eius labore.</p>
+                            <p>Chúng tôi mang đến giải pháp dịch vụ toàn cầu, hỗ trợ khách hàng ở bất kỳ đâu.</p>
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
                         <div class="service-item position-relative">
                             <div class="icon">
-                                <i class="bi bi-clock" style="color: #f3268c;"></i>
+                                <i class="bi bi-alarm" style="color: #f3268c;"></i>
                             </div>
-                            <a href="service-details.html" class="stretched-link">
-                                <h3>Dolori Architecto</h3>
+                            <a href="#" class="stretched-link">
+                                <h3>Tiết Kiệm Thời Gian</h3>
                             </a>
-                            <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure.
-                                Corrupti recusandae ducimus enim.</p>
+                            <p>Giải pháp của chúng tôi giúp bạn tiết kiệm thời gian để tập trung vào điều quan trọng
+                                nhất.</p>
                         </div>
                     </div><!-- End Service Item -->
 
@@ -1211,7 +1153,8 @@ use app\core\Application;
 
             </div>
 
-        </section><!-- /Services Section -->
+        </section>
+        <!-- /Services Section -->
 
 
         <!-- Testimonials Section -->
@@ -1220,7 +1163,7 @@ use app\core\Application;
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Testimonials</h2>
-                <p>What they are saying about us</p>
+                <p>Đánh giá từ khách hàng của chúng tôi</p>
             </div><!-- End Section Title -->
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -1256,8 +1199,8 @@ use app\core\Application;
                         <div class="swiper-slide">
                             <div class="testimonial-item">
                                 <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                                <h3>Saul Goodman</h3>
-                                <h4>Ceo &amp; Founder</h4>
+                                <h3>Xin một lần đau</h3>
+                                <h4>Giám đốc điều hành</h4>
                                 <div class="stars">
                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                         class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -1265,9 +1208,9 @@ use app\core\Application;
                                 </div>
                                 <p>
                                     <i class="bi bi-quote quote-icon-left"></i>
-                                    <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
-                                        suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.
-                                        Maecen aliquam, risus at semper.</span>
+                                    <span>Sản phẩm của trang web này rất tuyệt vời! Các thiết bị hỗ trợ như xe lăn và
+                                        máy hỗ trợ đi lại giúp cải thiện cuộc sống của người khuyết tật một cách đáng
+                                        kể. Tôi rất hài lòng với dịch vụ và chất lượng sản phẩm.</span>
                                     <i class="bi bi-quote quote-icon-right"></i>
                                 </p>
                             </div>
@@ -1276,8 +1219,8 @@ use app\core\Application;
                         <div class="swiper-slide">
                             <div class="testimonial-item">
                                 <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                                <h3>Sara Wilsson</h3>
-                                <h4>Designer</h4>
+                                <h3>Vũ Như Cẩn</h3>
+                                <h4>Chuyên gia tư vấn</h4>
                                 <div class="stars">
                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                         class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -1285,11 +1228,9 @@ use app\core\Application;
                                 </div>
                                 <p>
                                     <i class="bi bi-quote quote-icon-left"></i>
-                                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem
-                                        cillum
-                                        quid cillum eram malis quorum velit fore eram velit sunt aliqua noster
-                                        fugiat
-                                        irure amet legam anim culpa.</span>
+                                    <span>Các sản phẩm hỗ trợ đi lại rất thân thiện với người dùng. Đội ngũ tư vấn và hỗ
+                                        trợ khách hàng cực kỳ tận tâm. Tôi rất vui khi biết đến và sử dụng dịch vụ từ
+                                        trang web này.</span>
                                     <i class="bi bi-quote quote-icon-right"></i>
                                 </p>
                             </div>
@@ -1298,8 +1239,8 @@ use app\core\Application;
                         <div class="swiper-slide">
                             <div class="testimonial-item">
                                 <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                                <h3>Jena Karlis</h3>
-                                <h4>Store Owner</h4>
+                                <h3>Khi tương lai mơ hồ</h3>
+                                <h4>Nhà bán lẻ</h4>
                                 <div class="stars">
                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                         class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -1307,10 +1248,9 @@ use app\core\Application;
                                 </div>
                                 <p>
                                     <i class="bi bi-quote quote-icon-left"></i>
-                                    <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla
-                                        quem veniam duis minim tempor labore quem eram duis noster aute amet eram
-                                        fore
-                                        quis sint minim.</span>
+                                    <span>Trang web rất dễ sử dụng và có nhiều sản phẩm đa dạng. Hy vọng trong tương lai
+                                        sẽ bổ sung thêm các video hướng dẫn chi tiết để người dùng dễ dàng tìm hiểu hơn.
+                                        Dù vậy, tôi đánh giá cao chất lượng hiện tại!</span>
                                     <i class="bi bi-quote quote-icon-right"></i>
                                 </p>
                             </div>
@@ -1319,8 +1259,8 @@ use app\core\Application;
                         <div class="swiper-slide">
                             <div class="testimonial-item">
                                 <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                                <h3>Matt Brandon</h3>
-                                <h4>Freelancer</h4>
+                                <h3>Có không giữ mất đừng tìm</h3>
+                                <h4>Người dùng cuối</h4>
                                 <div class="stars">
                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                         class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -1328,11 +1268,9 @@ use app\core\Application;
                                 </div>
                                 <p>
                                     <i class="bi bi-quote quote-icon-left"></i>
-                                    <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export
-                                        minim
-                                        fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit
-                                        fore
-                                        quem dolore labore illum veniam.</span>
+                                    <span>Nhờ sản phẩm từ trang web, tôi đã có thể tự tin hơn trong cuộc sống hàng ngày.
+                                        Các thiết bị hỗ trợ di chuyển rất dễ sử dụng và bền bỉ. Đây thực sự là một giải
+                                        pháp hoàn hảo cho người khuyết tật.</span>
                                     <i class="bi bi-quote quote-icon-right"></i>
                                 </p>
                             </div>
@@ -1341,8 +1279,8 @@ use app\core\Application;
                         <div class="swiper-slide">
                             <div class="testimonial-item">
                                 <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                                <h3>John Larson</h3>
-                                <h4>Entrepreneur</h4>
+                                <h3>Đã nghiên là phải cứu</h3>
+                                <h4>Nhà nghiên cứu</h4>
                                 <div class="stars">
                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                         class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -1350,11 +1288,9 @@ use app\core\Application;
                                 </div>
                                 <p>
                                     <i class="bi bi-quote quote-icon-left"></i>
-                                    <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam
-                                        tempor
-                                        noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat
-                                        legam
-                                        esse veniam culpa fore nisi cillum quid.</span>
+                                    <span>Việc cung cấp sản phẩm chuyên dụng kèm theo thông tin chi tiết và hướng dẫn sử
+                                        dụng rõ ràng là điều tôi đánh giá rất cao. Đây là một giải pháp hỗ trợ xã hội
+                                        cực kỳ ý nghĩa.</span>
                                     <i class="bi bi-quote quote-icon-right"></i>
                                 </p>
                             </div>
@@ -1366,7 +1302,8 @@ use app\core\Application;
 
             </div>
 
-        </section><!-- /Testimonials Section -->
+        </section>
+        <!-- /Testimonials Section -->
 
         <!-- Team Section -->
         <section id="team" class="team section">
@@ -1400,7 +1337,7 @@ use app\core\Application;
                     <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
                         <div class="team-member">
                             <div class="member-img">
-                                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
                                 <div class="social">
                                     <a href="https://www.facebook.com/quang.contact"><i class="bi bi-facebook"></i></a>
                                     <a href="https://www.instagram.com/_quanq.tr/"><i class="bi bi-instagram"></i></a>
@@ -1416,7 +1353,7 @@ use app\core\Application;
                     <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
                         <div class="team-member">
                             <div class="member-img">
-                                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
                                 <div class="social">
                                     <a href=""><i class="bi bi-facebook"></i></a>
                                     <a href=""><i class="bi bi-instagram"></i></a>
@@ -1453,105 +1390,6 @@ use app\core\Application;
 
 
         <!-- Recent Posts Section -->
-        <section id="recent-posts" class="recent-posts section">
-
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Bài Đăng</h2>
-                <p>Thông tin mới nhất<br></p>
-            </div><!-- End Section Title -->
-
-            <div class="container">
-
-                <div class="row gy-4">
-
-                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <article>
-
-                            <div class="post-img">
-                                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
-                            </div>
-
-                            <p class="post-category">Politics</p>
-
-                            <h2 class="title">
-                                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-                            </h2>
-
-                            <div class="d-flex align-items-center">
-                                <img src="assets/img/blog/blog-author.jpg" alt=""
-                                    class="img-fluid post-author-img flex-shrink-0">
-                                <div class="post-meta">
-                                    <p class="post-author">Maria Doe</p>
-                                    <p class="post-date">
-                                        <time datetime="2022-01-01">Jan 1, 2022</time>
-                                    </p>
-                                </div>
-                            </div>
-
-                        </article>
-                    </div><!-- End post list item -->
-
-                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <article>
-
-                            <div class="post-img">
-                                <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
-                            </div>
-
-                            <p class="post-category">Sports</p>
-
-                            <h2 class="title">
-                                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
-                            </h2>
-
-                            <div class="d-flex align-items-center">
-                                <img src="assets/img/blog/blog-author-2.jpg" alt=""
-                                    class="img-fluid post-author-img flex-shrink-0">
-                                <div class="post-meta">
-                                    <p class="post-author">Allisa Mayer</p>
-                                    <p class="post-date">
-                                        <time datetime="2022-01-01">Jun 5, 2022</time>
-                                    </p>
-                                </div>
-                            </div>
-
-                        </article>
-                    </div><!-- End post list item -->
-
-                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <article>
-
-                            <div class="post-img">
-                                <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
-                            </div>
-
-                            <p class="post-category">Entertainment</p>
-
-                            <h2 class="title">
-                                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et
-                                    soluta</a>
-                            </h2>
-
-                            <div class="d-flex align-items-center">
-                                <img src="assets/img/blog/blog-author-3.jpg" alt=""
-                                    class="img-fluid post-author-img flex-shrink-0">
-                                <div class="post-meta">
-                                    <p class="post-author">Mark Dower</p>
-                                    <p class="post-date">
-                                        <time datetime="2022-01-01">Jun 22, 2022</time>
-                                    </p>
-                                </div>
-                            </div>
-
-                        </article>
-                    </div><!-- End post list item -->
-
-                </div><!-- End recent posts list -->
-
-            </div>
-
-        </section><!-- /Recent Posts Section -->
 
         <!-- Contact Section -->
         <section id="contact" class="contact section">

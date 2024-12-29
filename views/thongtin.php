@@ -273,9 +273,7 @@ use app\core\Application;
                     <div class="CartShop">
                         <h1>Thông tin đơn hàng</h1>
                         <div class="compare_plan">
-                            <div class="plans-list">
-                                <p>Bạn đang có <?php echo $countProduct ?> sản phẩm</p>
-                            </div>
+
 
                             <div class="sho-row">
                                 <div class="plans-list1">

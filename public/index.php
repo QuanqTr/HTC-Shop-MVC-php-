@@ -54,9 +54,6 @@ $app->router->post('/register', [AuthController::class, 'register']);
 $app->router->get('/login', [AuthController::class, 'showLogin']);
 $app->router->post('/login', [AuthController::class, 'login']);
 $app->router->get('/logout', [AuthController::class, 'logout']);
-
-$app->router->get('/forgot-password', [UserController::class, 'forgotPasswordView']);
-$app->router->post('/forgot-password', [UserController::class, 'forgotPassword']);
 // UPLOAD FILE
 $app->router->post('/upload', [UploadController::class, 'upload']);
 

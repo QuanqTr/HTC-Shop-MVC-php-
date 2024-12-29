@@ -233,6 +233,85 @@ use app\core\Application;
         z-index: 99;
     }
 
+    /* Giao diện tổng thể */
+    /* Giao diện tổng thể */
+    /* Giao diện tổng thể */
+    .search-home {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        /* Màu nền sáng */
+    }
+
+    #search-box {
+        width: 100%;
+        max-width: 600px;
+        /* Chiều rộng tối đa */
+    }
+
+    /* Style cho input */
+    .search-wapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .text-search {
+        flex: 1;
+        /* Chiếm hết chiều rộng còn lại */
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        transition: border-color 0.3s;
+    }
+
+    .text-search:focus {
+        outline: none;
+        border-color: #ff6f00;
+        /* Đổi màu viền khi focus */
+    }
+
+    /* Style cho nút tìm kiếm */
+    .search-btn {
+        background: linear-gradient(45deg, #ff6f00, #ff9e00);
+        /* Gradient màu cam */
+        color: #fff;
+        border: none;
+        padding: 0 10px;
+        /* Padding ngang */
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s ease-in-out;
+        height: 100%;
+        /* Chiều cao nút bằng chiều cao của input */
+        white-space: nowrap;
+        /* Giữ chữ không xuống dòng */
+        min-width: 60px;
+        /* Đảm bảo nút đủ rộng */
+    }
+
+    .search-btn:hover {
+        background: linear-gradient(45deg, #e65c00, #ff9e00);
+        /* Gradient tối hơn khi hover */
+        transform: translateY(-2px);
+        /* Đẩy nút lên khi hover */
+    }
+
+    .search-btn:focus {
+        outline: none;
+    }
+
+    /* Làm cho cả input và button có chiều cao tương tự */
+    .search-wapper .form-control {
+        height: 50px;
+        /* Đặt chiều cao input */
+    }
+
     a {
         text-decoration: none;
         color: #2c7715;
@@ -609,8 +688,18 @@ use app\core\Application;
                     <use xlink:href="#wave-path" x="50" y="9"></use>
                 </g>
             </svg>
-
         </section><!-- /Hero Section -->
+        <br>
+        <br>
+        <div class="search-home">
+            <form action="/" id="search-box" class="d-flex" onsubmit="return handleSearch(event)">
+                <div class="search-wapper w-30">
+                    <input type="text" class="form-control me-2" name="q" id="search-input"
+                        placeholder="Nhập tên sản phẩm cần tìm" />
+                    <button type="submit" class="search-btn"><i class="bi bi-search"></i></button>
+                </div>
+            </form>
+        </div>
         <!-- Portfolio Section -->
         <section id="portfolio" class="portfolio section">
             <!-- Section Title -->
@@ -943,106 +1032,6 @@ use app\core\Application;
 
         </section><!-- /Team Section -->
 
-        <!-- Recent Posts Section -->
-        <section id="recent-posts" class="recent-posts section">
-
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Bài Đăng</h2>
-                <p>Thông tin mới nhất<br></p>
-            </div><!-- End Section Title -->
-
-            <div class="container">
-
-                <div class="row gy-4">
-
-                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <article>
-
-                            <div class="post-img">
-                                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
-                            </div>
-
-                            <p class="post-category">Politics</p>
-
-                            <h2 class="title">
-                                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-                            </h2>
-
-                            <div class="d-flex align-items-center">
-                                <img src="assets/img/blog/blog-author.jpg" alt=""
-                                    class="img-fluid post-author-img flex-shrink-0">
-                                <div class="post-meta">
-                                    <p class="post-author">Maria Doe</p>
-                                    <p class="post-date">
-                                        <time datetime="2022-01-01">Jan 1, 2022</time>
-                                    </p>
-                                </div>
-                            </div>
-
-                        </article>
-                    </div><!-- End post list item -->
-
-                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <article>
-
-                            <div class="post-img">
-                                <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
-                            </div>
-
-                            <p class="post-category">Sports</p>
-
-                            <h2 class="title">
-                                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
-                            </h2>
-
-                            <div class="d-flex align-items-center">
-                                <img src="assets/img/blog/blog-author-2.jpg" alt=""
-                                    class="img-fluid post-author-img flex-shrink-0">
-                                <div class="post-meta">
-                                    <p class="post-author">Allisa Mayer</p>
-                                    <p class="post-date">
-                                        <time datetime="2022-01-01">Jun 5, 2022</time>
-                                    </p>
-                                </div>
-                            </div>
-
-                        </article>
-                    </div><!-- End post list item -->
-
-                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <article>
-
-                            <div class="post-img">
-                                <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
-                            </div>
-
-                            <p class="post-category">Entertainment</p>
-
-                            <h2 class="title">
-                                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et
-                                    soluta</a>
-                            </h2>
-
-                            <div class="d-flex align-items-center">
-                                <img src="assets/img/blog/blog-author-3.jpg" alt=""
-                                    class="img-fluid post-author-img flex-shrink-0">
-                                <div class="post-meta">
-                                    <p class="post-author">Mark Dower</p>
-                                    <p class="post-date">
-                                        <time datetime="2022-01-01">Jun 22, 2022</time>
-                                    </p>
-                                </div>
-                            </div>
-
-                        </article>
-                    </div><!-- End post list item -->
-
-                </div><!-- End recent posts list -->
-
-            </div>
-
-        </section><!-- /Recent Posts Section -->
 
         <!-- Contact Section -->
         <section id="contact" class="contact section">
@@ -1249,6 +1238,7 @@ use app\core\Application;
             videoFrame.src = ""; // Dừng video khi đóng popup
         });
     });
+
     document.addEventListener("DOMContentLoaded", function() {
         window.onscroll = function() {
             var header = document.getElementById('header-top'); // Lấy phần tử header với id 'header-top'
@@ -1263,6 +1253,14 @@ use app\core\Application;
         }
     });
 
+    // Giữ lại nội dung tìm kiếm khi tải lại trang
+    window.onload = function() {
+        var params = new URLSearchParams(window.location.search);
+        var query = params.get('q');
+        if (query) {
+            document.getElementById('search-input').value = query;
+        }
+    };
     document.addEventListener("DOMContentLoaded", function() {
         var showRegisterButton = document.getElementById('show-register');
         var showLoginButton = document.getElementById('show-login');

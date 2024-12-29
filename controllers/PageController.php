@@ -7,7 +7,6 @@ use app\core\Application;
 use app\core\Controller;
 use app\core\Request;
 use app\models\Category;
-use app\models\Comment;
 use app\models\Order;
 use app\models\OrderDetails;
 use app\models\Product;
@@ -30,8 +29,6 @@ class PageController extends Controller
 
         $user = Application::$app->session->get('user_');
         $cart = Application::$app->session->get('card');
-        $sql = 'SELECT * FROM post where status = 1 ORDER BY created_at DESC LIMIT 4';
-        $productNews = Application::$app->db->query($sql);
         $sql = "SELECT products.*, categories.name as namect, products.name as name FROM products JOIN categories ON products.category_id = categories.id $where and products.quantity >1 ORDER BY categories.id DESC";
         $productHots = Application::$app->db->query($sql);
 
@@ -43,17 +40,12 @@ class PageController extends Controller
         $sql = 'SELECT * FROM categories';
         $danhmuc = Application::$app->db->query($sql);
 
-        $sql = 'SELECT * FROM post where status = 1 ORDER BY created_at DESC';
-        $post = Application::$app->db->query($sql);
         return $this->render('home-page', [
             'user' => $user,
-            'productNews' => $productNews,
-            'post' => $post,
             'cart' => $cart,
             'productHots' => $productHots,
             'productTopRate' => $productTopRate,
             'productGirls' => $productGirls,
-            'productNews' => $productNews,
             'danhmuc' => $danhmuc,
             'title' => 'index',
             'breadcrumbs' => [
@@ -74,8 +66,6 @@ class PageController extends Controller
         $productRelated = Product::get();
         $id_sanpham = (int) $_GET['id'];
         $product = Product::findOne(['id' => $id_sanpham]);
-        $sql = "SELECT comment.*, users.* ,comment.id as idc FROM comment JOIN products ON products.id = comment.product_id JOIN users ON users.id = comment.user_id where product_id = $id_sanpham";
-        $data = Application::$app->db->query($sql);
         $danhmuc = Category::get();
         $user = Application::$app->session->get('user_');
         $cart = Application::$app->session->get('card');
@@ -90,7 +80,6 @@ class PageController extends Controller
             'id_sanpham' => $id_sanpham,
             'product' => $product,
             'productRelated' => $productRelated,
-            'comment' => $data,
             'breadcrumbs' => [
                 [
                     'link' => '/product-detail',
@@ -167,7 +156,6 @@ class PageController extends Controller
     public function showcard()
     {
         $productRelated = Product::get();
-        $Comment = Comment::get();
         $danhmuc = Category::get();
         $product = Application::$app->session->get('card');
         $this->setLayout(false);
@@ -175,7 +163,6 @@ class PageController extends Controller
             'productRelated' => $productRelated,
             'cart' => $product,
             'danhmuc' => $danhmuc,
-            'comment' => $Comment,
         ]);
     }
 

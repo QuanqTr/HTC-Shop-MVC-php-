@@ -49,16 +49,14 @@ HTCShop/
 
 ## Tác giả
 Heart To Community Team
-
-## Giấy phép
-[Thêm thông tin giấy phép]
-
-## Liên hệ
-Email: [Thêm email liên hệ]
+Trần Đại Quang (Leader)
+Lê Thị Thanh Thùy (Member)
+Dương Vũ Hùng (Member)
+Nguyễn Đức Kiệt (Member)
 
 ## Preview
 ```
-http://localhost/HTCShop
+http://localhost/8000
 ```
 
 ## Yêu cầu hệ thống

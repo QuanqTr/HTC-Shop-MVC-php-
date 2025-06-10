@@ -415,7 +415,7 @@ use app\core\Application;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 80vh;
+        margin-top: 70px;
         background-color: rgb(255, 255, 255);
         /* Màu nền của toàn trang */
         padding: 20px;

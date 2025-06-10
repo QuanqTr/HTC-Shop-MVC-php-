@@ -445,7 +445,8 @@ use app\core\Application;
 
                     <div class="wrap" style="margin-top: 100px !important;">
                         <div class="cart-total">
-                            <h4>Tổng cộng giỏ hàng: <span id="cart-total"><?= number_format($total) . ' VNĐ' ?></span>
+                            <h4>Tổng cộng giỏ hàng: <span id="cart-total">
+                                    <?= number_format($total) . ' VNĐ' ?></span>
                             </h4>
                         </div>
                         <form action="<?= '/update-cart' ?>" method="post">
@@ -481,17 +482,20 @@ use app\core\Application;
                                                 <h4><?= $item->name ?></h4>
                                             </a>
                                         </div>
-                                        <div class="price_body1"><?= number_format($item->price) . ' VNĐ' ?></div>
+
+                                        <div class="price_body1">
+                                            <?= number_format($item->price * ((100 - $item->sale) / 100)) . ' VNĐ' ?>
+                                        </div>
                                         <div class="price_body2">
                                             <input type="number" class="quantity" style="width: 50px;"
                                                 max="<?= $item->quantity ?>" min="1" name="<?= $item->id ?>"
                                                 id="quantity-<?= $item->id ?>" value="<?= $item->so_luong_mua ?>"
-                                                data-price="<?= $item->price ?>"
-                                                onchange="updateTotal(<?= $item->id ?>, <?= $item->price ?>)">
+                                                data-price="<?= $item->price * ((100 - $item->sale) / 100) ?>"
+                                                onchange="updateTotal(<?= $item->id ?>, <?= $item->price * ((100 - $item->sale) / 100) ?>)">
 
                                         </div>
                                         <div class="price_body1" id="total-price-<?= $item->id ?>">
-                                            <?= number_format($item->price * $item->so_luong_mua) . ' VNĐ' ?>
+                                            <?= number_format(($item->price * ((100 - $item->sale) / 100)) * $item->so_luong_mua) . ' VNĐ' ?>
                                         </div>
                                         <div class="price_body2">
                                             <a href="remove-product?id=<?= $item->id ?>">[Xóa]</a>
@@ -506,8 +510,9 @@ use app\core\Application;
 
                                 <div class="tfoo">
                                     <div class="order_now2" style="margin-bottom: 20px">
-                                        <button type="submit" class="button" name="update-cart" value="Update cart">Tiến
-                                            hành thanh toán</button>
+                                        <button type="submit" class="button" name="update-cart" value="Update cart">
+                                            Tiến hành thanh toán
+                                        </button>
                                     </div>
                                 </div>
 
@@ -519,19 +524,14 @@ use app\core\Application;
                                 <?php } ?>
                             </div>
 
-                            <!-- Tổng cộng giỏ hàng -->
-
                         </form>
-                        <!------end.content-top--->
 
-                        <!-----end.product-hight--->
                         <script>
                         function updateTotal(productId, productPrice) {
                             var quantity = document.getElementById('quantity-' + productId).value;
                             var totalPrice = productPrice * quantity;
                             document.getElementById('total-price-' + productId).innerHTML = numberWithCommas(
-                                    totalPrice) +
-                                ' VNĐ';
+                                totalPrice) + ' VNĐ';
 
                             // Cập nhật tổng cộng của giỏ hàng
                             updateCartTotal();
@@ -542,8 +542,7 @@ use app\core\Application;
                             // Lặp qua tất cả các sản phẩm để tính tổng
                             var quantities = document.querySelectorAll('.quantity');
                             quantities.forEach(function(input) {
-                                var productId = input.id.split('-')[1];
-                                var price = parseInt(input.dataset.price);
+                                var price = parseFloat(input.dataset.price);
                                 var quantity = parseInt(input.value);
                                 total += price * quantity;
                             });

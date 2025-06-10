@@ -273,8 +273,6 @@ use app\core\Application;
                     <div class="CartShop">
                         <h1>Thông tin đơn hàng</h1>
                         <div class="compare_plan">
-
-
                             <div class="sho-row">
                                 <div class="plans-list1">
                                     <h3>Sản phẩm</h3>
@@ -283,21 +281,27 @@ use app\core\Application;
                                     <h3>Số lượng</h3>
                                 </div>
                                 <div class="plans-list3">
-                                    <h3>Giá </h3>
+                                    <h3>Giá (đã sale)</h3>
                                 </div>
                                 <div class="clear-float"></div>
                             </div>
 
                             <div class="body-row">
-                                <?php foreach ($cart as $item) { ?>
+                                <?php
+                                foreach ($cart as $item) {
+                                    // Áp dụng công thức tính giá sau khi giảm giá
+                                    $priceAfterSale = $item->price * ((100 - $item->sale) / 100);
+                                    ?>
                                 <div class="plans-list1">
                                     <img src="/uploads/<?php echo $item->avatar ?>" alt="" title="" width="60px"
                                         height="60" />
                                 </div>
-                                <div class="plans-list2"><input type="text" id="soluongmua" name="so_luong_mua"
-                                        value="<?php echo $item->so_luong_mua ?>" /></div>
-                                <div class="plans-list3" id="test" value="<?= $item->price ?>">
-                                    <?= number_format($item->price) ?> VNĐ
+                                <div class="plans-list2">
+                                    <input type="text" id="soluongmua" name="so_luong_mua"
+                                        value="<?php echo $item->so_luong_mua ?>" />
+                                </div>
+                                <div class="plans-list3" id="test">
+                                    <?= number_format($priceAfterSale) ?> VNĐ
                                 </div>
                                 <div class="clear-float"></div>
                                 <?php } ?>
@@ -305,18 +309,27 @@ use app\core\Application;
 
                             <div class="control-shop">
                                 <div class="order_now1">Phí vận chuyển</div>
-                                <div class="order_now2"><?= number_format($up) ?></div>
+                                <div class="order_now2"><?= number_format($up) ?> VNĐ</div>
                                 <div class="clear-float"></div>
                             </div>
 
                             <div class="control-shop">
                                 <div class="order_now1">Tổng cộng</div>
-                                <div class="order_now2"><?= number_format($tong + $up) ?>VNĐ</div>
+                                <div class="order_now2">
+                                    <?php
+                                    // Tính tổng cộng với giá đã áp dụng giảm giá
+                                    $totalAfterSale = array_reduce($cart, function ($carry, $item) {
+                                        $priceAfterSale = $item->price * ((100 - $item->sale) / 100);
+                                        return $carry + ($priceAfterSale * $item->so_luong_mua);
+                                    }, 0);
+                                    echo number_format($totalAfterSale + $up);
+                                    ?> VNĐ
+                                </div>
                                 <div class="clear-float"></div>
 
                                 <div class="control-suse">
                                     <div class="order_now1">Thành tiền</div>
-                                    <div class="order_now2"><?= number_format($total + $up) ?>VNĐ</div>
+                                    <div class="order_now2"><?= number_format($totalAfterSale + $up) ?> VNĐ</div>
                                     <div class="clear-float"></div>
                                 </div>
                             </div>

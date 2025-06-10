@@ -240,11 +240,14 @@ class PageController extends Controller
 
         if (is_array($cart)) {
             foreach ($cart as $item) {
-                $total += $item->so_luong_mua * $item->price;
+                // Tính giá sau giảm giá
+                $priceAfterSale = $item->price * ((100 - $item->sale) / 100);
+                $item->thanh_tien = $item->so_luong_mua * $priceAfterSale;
+                $total += $item->thanh_tien;  // Tổng tiền sau giảm giá
                 $countProduct++;
             }
         }
-        $tong = $total - $up;
+        $tong = $total + $up;  // Tổng tiền bao gồm phí vận chuyển
 
         if (!Application::$app->session->get('user_')) {
             Application::$app->response->redirect('/login-thanhtoan');
@@ -285,10 +288,11 @@ class PageController extends Controller
         $total = 0;
         $orders = [];
 
-        // Tính tổng giá trị đơn hàng
+        // Tính tổng giá trị đơn hàng theo giá đã giảm (sale)
         if (is_array($cart)) {
             foreach ($cart as $item) {
-                $total += $item->so_luong_mua * $item->price;
+                $priceAfterSale = $item->price * ((100 - $item->sale) / 100);
+                $total += $item->so_luong_mua * $priceAfterSale;
             }
         }
 
@@ -309,12 +313,15 @@ class PageController extends Controller
             foreach ($cart as $value) {
                 $product = Product::findOne(['id' => $value->id]);
 
+                // Tính giá sau khi giảm giá (sale)
+                $priceAfterSale = $value->price * ((100 - $value->sale) / 100);
+
                 // Thông tin chi tiết đơn hàng
                 $data = [
                     'order_id' => $idOrder,
                     'product_id' => $value->id,
                     'amount' => $value->so_luong_mua,
-                    'price' => $value->price,
+                    'price' => $priceAfterSale,  // Sử dụng giá sau giảm giá
                     'sale' => $value->sale,
                     'diachi' => $diachiOrder,  // Địa chỉ giao hàng
                 ];

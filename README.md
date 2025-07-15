@@ -115,7 +115,3 @@ Heart To Community Team
 ## Contact
 Email: tdquang.203@gmail.com
 
-## Preview
-```
-http://localhost/HTCShop
-```

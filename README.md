@@ -38,15 +38,6 @@ HTCShop/
 ├── assets/         # Resources
 └── vendor/         # Dependencies
 ```
-
-## Cài đặt
-1. Clone repository
-2. Cài đặt PHP 7.4+ và MySQL
-3. Chạy `composer install`
-4. Import database 
-5. Config database trong file `.env`
-6. Khởi chạy web server (Apache/Nginx)
-
 ## Tác giả
 Heart To Community Team
 Trần Đại Quang (Leader)
@@ -59,16 +50,9 @@ Nguyễn Đức Kiệt (Member)
 http://localhost/8000
 ```
 
-## Yêu cầu hệ thống
-- PHP 7.4 trở lên
-- MySQL 5.7 trở lên 
-- Composer
-- Web server (Apache/Nginx)
-
 ## Tính năng nổi bật
 - Giao diện thân thiện, dễ sử dụng
 - Responsive trên mọi thiết bị
 - Tối ưu SEO
 - Bảo mật cao
 - Quản lý đơn hàng chuyên nghiệp
-- Tích hợp nhiều phương thức thanh toán
